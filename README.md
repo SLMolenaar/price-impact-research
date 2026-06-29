@@ -15,7 +15,7 @@ Key findings:
 - A nonlinear model on the same three features as Almgren-Chriss (log_Q, log_sigma, log_V) does not improve on linear OLS; adding metaorder length and time-of-day does, beating Almgren-Chriss in all four experiments.
 - Volatility dominates size in every model and every regime, but the functional form of the sigma term in the extracted formulas changes across regimes and is not stable across PySR random seeds.
 
-The equity sqrt law does not hold on 2025 crypto spot data. The empirical size exponent is ~0.1 across both assets and both regimes, far from the theoretical 0.5. The finding is robust across two assets, two regimes, and two measurement methods (OLS and MLP local slope).
+Conditional on the Maitrier et al. metaorder reconstruction being a reasonable proxy for real trader activity, the equity sqrt law does not hold on 2025 crypto spot data: the empirical size exponent is ~0.1 across both assets and both regimes, far from the theoretical 0.5. The finding is robust across two assets, two regimes, and two measurement methods (OLS and MLP local slope), but since Binance provides no ground-truth trader IDs, this result cannot rule out that the low exponent partly reflects the reconstruction heuristic rather than true market impact (see Limitations).
 
 ### BTC/USDT, calm regime (Aug / Sep 2025)
 
